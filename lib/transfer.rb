@@ -9,7 +9,7 @@ class Transfer
   end
   
   def valid?
-    if @status == "open" && transfer_amount < sender.balance
+    if @status == "open" && transfer_amount < sender.balance && receiver.status == "open"
       true 
     else 
       false 
