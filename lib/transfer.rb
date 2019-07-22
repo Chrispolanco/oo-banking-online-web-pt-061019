@@ -8,6 +8,12 @@ class Transfer
     @status = "pending"
   end
   
-  def valid? 
+  def valid?
+    if @status == "open" && transfer_amount < @balance
+      true 
+    else 
+      false 
+    end 
+  end
     
 end
