@@ -1,4 +1,4 @@
 class Transfer
   
-  def initialize(sender)
+  def initialize(sender, r)
 end
