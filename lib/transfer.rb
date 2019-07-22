@@ -6,6 +6,8 @@ class Transfer
     @receiver = receiver
     @transer_amount = transer_amount
     @status = "pending"
+  end
+  
+  def valid? 
     
-  end 
 end
