@@ -9,11 +9,7 @@ class Transfer
   end
   
   def valid?
-    if sender.status == "open" && amount < sender.balance && receiver.status == "open"
-      true 
-    else 
-      false 
-    end 
-  end
+    sender.valid
+    
     
 end
